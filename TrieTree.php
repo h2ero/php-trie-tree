@@ -26,6 +26,10 @@ class TrieTree
 
     public function add($word)
     {
+        $word = trim($word);
+        if (strlen($word) == 0) {
+            return false;
+        }
         $charList = $this->splitWord($word);
         $len = count($charList);
         for ($i = 0; $i < $len; $i++) {
@@ -41,10 +45,15 @@ class TrieTree
                 $childTrieTree = &$childTrieTree[$charList[$i]];
             }
         }
+        return true;
     }
 
     public function delete($word)
     {
+        $word = trim($word);
+        if (strlen($word) == 0) {
+            return false;
+        }
         $charList = $this->splitWord($word);
         $len = count($charList);
         $deleteTrie = $charList;
@@ -83,6 +92,9 @@ class TrieTree
 
     public function find($text)
     {
+        if (strlen($text) == 0) {
+            return false;
+        }
         $charList = $this->splitWord($text);
         $len = count($charList);
         $foundWordList = array();
