@@ -1,0 +1,21 @@
+{
+    "name": "h2ero/php-trie-tree",
+    "minimum-stability": "dev",
+    "description": "Trie tree implementation for PHP",
+    "keywords": [ "trie", "trie tree", "敏感词过滤",  "黑名单" ],
+    "homepage": "https://github.com/h2ero/php-trie-tree",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "h2ero",
+            "email": "122750707@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.1"
+    },
+    "autoload": {
+        "psr-0": { "h2ero": "" }
+    }
+}
