@@ -16,6 +16,8 @@
         "php": ">=5.3.1"
     },
     "autoload": {
-        "psr-0": { "h2ero": "" }
+        "psr-4": {
+            "h2ero\\TrieTree\\": ""
+        }
     }
 }
